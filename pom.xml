@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.ivan</groupId>
+    <artifactId>ivan-angular</artifactId>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+    <description>IVan-Angular-NG-多租户管理系统</description>
+
+    <!-- 版本管理 -->
+    <properties>
+        <revision>1.0.0</revision>
+        <java.version>1.8</java.version>
+        <springboot-version>2.3.12.RELEASE</springboot-version>
+    </properties>
+
+    <!-- 模块管理 -->
+    <modules>
+        <module>ivan-admin</module>
+    </modules>
+
+
+    <!-- 依赖管理 -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- SpringBoot -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${springboot-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
