@@ -20,6 +20,7 @@
     <!-- 模块管理 -->
     <modules>
         <module>ivan-admin</module>
+        <module>ivan-common</module>
     </modules>
 
 
