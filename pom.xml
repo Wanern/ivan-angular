@@ -14,7 +14,9 @@
     <properties>
         <revision>1.0.0</revision>
         <java.version>1.8</java.version>
-        <springboot-version>2.3.12.RELEASE</springboot-version>
+        <springboot-version>2.6.15</springboot-version>
+        <mybatis.version>2.3.2</mybatis.version>
+        <hutool.version>5.8.24</hutool.version>
     </properties>
 
     <!-- 模块管理 -->
@@ -22,7 +24,6 @@
         <module>ivan-admin</module>
         <module>ivan-common</module>
     </modules>
-
 
     <!-- 依赖管理 -->
     <dependencyManagement>
@@ -34,6 +35,31 @@
                 <version>${springboot-version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <!-- 通用组件依赖 -->
+            <dependency>
+                <groupId>org.ivan</groupId>
+                <artifactId>ivan-common-bom</artifactId>
+                <version>${revision}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- hutool工具类 -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-bom</artifactId>
+                <version>${hutool.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Mybatis -->
+            <dependency>
+                <groupId>com.github.dreamroute</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.version}}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -5,17 +5,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.ivan</groupId>
-        <artifactId>ivan-angular</artifactId>
+        <artifactId>ivan-common</artifactId>
         <version>${revision}</version>
     </parent>
-    <artifactId>ivan-common</artifactId>
-    <packaging>pom</packaging>
-    <description>IVan-Angular-NG-多租户管理系统-通用组件</description>
+    <artifactId>ivan-common-mybatis</artifactId>
+    <description>IVan-Angular-NG-多租户管理系统-MyBatis组件</description>
 
-    <modules>
-        <module>ivan-common-bom</module>
-        <module>ivan-common-web</module>
-        <module>ivan-common-mybatis</module>
-    </modules>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+    </dependencies>
 </project>
