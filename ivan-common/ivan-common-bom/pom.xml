@@ -20,6 +20,12 @@
         <dependencies>
             <dependency>
                 <groupId>org.ivan</groupId>
+                <artifactId>ivan-common-core</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.ivan</groupId>
                 <artifactId>ivan-common-web</artifactId>
                 <version>${revision}</version>
             </dependency>

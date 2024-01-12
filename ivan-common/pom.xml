@@ -14,6 +14,7 @@
 
     <modules>
         <module>ivan-common-bom</module>
+        <module>ivan-common-core</module>
         <module>ivan-common-web</module>
         <module>ivan-common-mybatis</module>
     </modules>

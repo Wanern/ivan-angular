@@ -8,17 +8,29 @@
         <artifactId>ivan-common</artifactId>
         <version>${revision}</version>
     </parent>
-    <artifactId>ivan-common-web</artifactId>
-    <description>IVan-Angular-NG-多租户管理系统-通用Web组件</description>
+    <artifactId>ivan-common-core</artifactId>
+
 
     <dependencies>
-
+        <!-- springboot-web依赖 -->
         <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-captcha</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- 自动生成YML配置关联JSON文件 -->
+        <!-- javax-servlet依赖 -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+        </dependency>
+
+        <!-- 离线IP地址定位库 -->
+        <dependency>
+            <groupId>org.lionsoul</groupId>
+            <artifactId>ip2region</artifactId>
+        </dependency>
+
+        <!--  自动生成YML配置关联JSON文件  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
